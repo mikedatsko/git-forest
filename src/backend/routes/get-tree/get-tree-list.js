@@ -17,6 +17,7 @@ async function getUserRepoList(userId, page, repoList) {
 
     return userRepoCount === 100 ? getUserRepoList(userId, page + 1, repoList) : repoList;
   } catch(err) {
+    console.log('error', err);
     return {error: JSON.stringify(err.stack)};
   }
 }
@@ -58,7 +59,6 @@ module.exports = async (req, res, next) => {
 
     return res.send({
       repo_list: userRepoList,
-      user_top_list: userTop.map(user => ({user_id: user.user_id, repo_count: user.repo_count})),
       user_place: userPlace + 1,
       user_repo_count: userRepoCount
     });
