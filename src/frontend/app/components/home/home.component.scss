@@ -66,4 +66,10 @@
     flex-direction: column;
     color: #fff;
   }
+
+  .voiting {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+  }
 }
