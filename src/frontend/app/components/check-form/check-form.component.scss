@@ -1,0 +1,16 @@
+:host {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+
+  input {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50px 0 0 50px;
+  }
+
+  button {
+    border-radius: 0 50px 50px 0;
+    margin-left: -1px;
+  }
+}

@@ -1,0 +1,69 @@
+:host {
+  position: relative;
+  display: block;
+
+  .grass {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: url('../../../assets/images/bg-grass.png') repeat-x 50% 100%;
+    background-size: contain;
+  }
+
+  .place {
+    display: flex;
+    position: fixed;
+    width: 500px;
+    left: calc(50% - 250px);
+    top: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    h1 {
+      color: #fff;
+      text-shadow: 0 7px 30px rgba(0,0,0,0.1);
+    }
+
+    .place-value {
+      font-size: 120px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 7px 30px rgba(0,0,0,0.1);
+    }
+
+    .place-repos {
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 0 7px 30px rgba(0,0,0,0.1);
+    }
+
+    .place-phrase {
+      font-size: 16px;
+      color: #fff;
+      text-shadow: 0 7px 30px rgba(0,0,0,0.1);
+    }
+  }
+
+  .top-list {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    color: #fff;
+  }
+
+  .error-user-repo-list {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+}

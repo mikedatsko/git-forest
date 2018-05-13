@@ -1,0 +1,6 @@
+<form #checkForm="ngForm" (submit)="checkUser(checkForm)" class="form-inline">
+  <input class="form-control" type="text" name="userId" placeholder="Your Github nickname" ngModel>
+  <button type="submit" class="btn btn-outline-light">Check</button>
+</form>
+
+<small>Use your Github profile to create a forest</small>

@@ -1,0 +1,16 @@
+<div class="container">
+  <app-check-form class="float-right"></app-check-form>
+
+  <div class="logo-slogan">
+    <a routerLink="/" class="logo"></a>
+
+    <div class="slogan-title">
+      <div class="logo-title" [innerText]="logoTitle"></div>
+      <div class="slogan">Check your greenness</div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+<app-preloader></app-preloader>

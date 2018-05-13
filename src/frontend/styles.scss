@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+//@import './assets/css/jsmind.css';
+
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+.badge, .btn {
+  border-radius: 50px;
+}
+
+.ng-invalid {
+  border-color: #dc3545 !important;
+}
